@@ -27,7 +27,7 @@
 </style>
 <body scoll=no>
 <audio id="audio"></audio>
-<div class="top-time" id="top-time">20s</div>
+<div class="top-time" id="top-time">60s</div>
 <div class="run">
   <!--<img src="./food1.png" alt="55" width="100%" />-->
 </div>
@@ -134,7 +134,7 @@
     touch.on('#bottom-box', 'dragend', function(ev){
       dx += ev.x;
     });
-    var playTime = 20;
+    var playTime = 60;
     function cutTime(){
       playTime--;
       if(playTime == 0){
