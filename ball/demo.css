@@ -1,0 +1,64 @@
+body {
+  min-height: 100vh;
+  font-family: STHeitiSC-Light, '黑体';
+  background: url('bg.png');
+}
+.top-box {
+  width: 45%;
+  position: fixed;
+  top: 0.26666667rem;
+  left: 0;
+}
+.run {
+  width: 1.4rem;
+  position: fixed;
+  top: 0;
+  left: 0.4rem;
+  height: 1.52rem;
+}
+.bottom-box {
+  width: 26%;
+  height: 3.2rem;
+  position: fixed;
+  bottom: 0;
+  left: 35%;
+}
+.food-num {
+  font-size: 0.56rem;
+  color: #FF0000;
+  position: relative;
+  top: -1.2rem;
+  left: 1.06666667rem;
+  display: none;
+}
+.top-time {
+  text-align: center;
+  width: 2.66666667rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #ef5a50;
+  border-radius: 0.8rem;
+  box-shadow: #D68680 0.08rem 0.08rem 0.10666667rem;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 22;
+}
+.bom-box {
+  width: 90%;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 0.13333333rem;
+  background-color: #ef5a50;
+  color: #fff;
+  text-align: center;
+  margin: 1.6rem auto !important;
+}
