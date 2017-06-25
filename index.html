@@ -20,7 +20,7 @@
 </head>
 <style type="text/css">
   .bottom-box{
-    background: url('/run/rabbit.png') no-repeat center;
+    background: url('./run/rabbit.png') no-repeat center;
     background-size: cover;
   }
 
@@ -41,8 +41,8 @@
     你的得分为:<span id="all-num">40</span>
   </div>
 </div>
-<script src="libs/zepto.min.js?ver=1.1.6-sep"></script>
-<script src="libs/touch-0.2.14.min.js"></script>
+<script src="./libs/zepto.min.js?ver=1.1.6-sep"></script>
+<script src="./libs/touch-0.2.14.min.js"></script>
 <script type="text/javascript">
   $(function(){
     //  蘑菇坠落
@@ -67,7 +67,7 @@
     function imgUrl(){
       numImg = Math.floor( Math.random() * 5 +1 );
       maxWidth = Math.floor( Math.random() * (screenWidth - domWidth) );
-      $('<div url-num="'+numImg+'" class="run"><img src="/run/food'+numImg+'.png" alt="55" width="100%" height="100%" /></div>').css({
+      $('<div url-num="'+numImg+'" class="run"><img src="./run/food'+numImg+'.png" alt="55" width="100%" height="100%" /></div>').css({
         'left': maxWidth
       }).appendTo('body').animate(
               {top: posHeight},
@@ -83,10 +83,10 @@
                   var maxvalue = thisLeft + domWidth;
                   if(thisTop >= dom2.position().top && dom2.position().left <= maxvalue && maxvalue <= dom2.position().left + 3/2*dom2Width){
                     numbox.css('display','block');
-                    audio.src = '/run/3020.mp3';
+                    audio.src = './run/3020.mp3';
                     audio.play();
                     if(thisAttr == 3 || thisAttr == 1){
-                      audio2.src = '/run/3021.mp3';
+                      audio2.src = './run/3021.mp3';
                       audio2.play();
                       numbox.html('- 2');
                       foodNum = foodNum -2;
